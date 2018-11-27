@@ -1,0 +1,21 @@
+datasource:
+  write:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: admin
+
+  read:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: admin
+spring:
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: ~
+    timeout: 0
+
+logging:
+  file: /home/weiax/logs/security.${server.port}.log
+  level.com.weiax.client: DEBUG

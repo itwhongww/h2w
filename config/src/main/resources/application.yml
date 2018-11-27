@@ -5,10 +5,10 @@ spring:
     config:
       server:
         git:
-          uri:
-          search-paths: configs
-          username:
-          password:
+          uri: https://github.com/itwhongww/h2w.git
+          search-paths: config/src/main/resources
+          username: itwhongww
+          password: hong198954
         label: master
 server:
   port: 8888

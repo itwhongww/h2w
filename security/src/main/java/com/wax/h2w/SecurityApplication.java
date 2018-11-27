@@ -2,13 +2,13 @@ package com.wax.h2w;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 @SpringBootApplication
-@EnableConfigServer
-public class ConfigApplication {
+@EnableWebSecurity
+public class SecurityApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConfigApplication.class, args);
+		SpringApplication.run(SecurityApplication.class, args);
 	}
 }

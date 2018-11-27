@@ -1,0 +1,21 @@
+datasource:
+  write:
+    url: jdbc:mysql://localhost:3306/weiax?useUnicode=true&characterEncoding=utf-8
+    username: hongww
+    password: 198954
+
+  read:
+    url: jdbc:mysql://localhost:3306/weiax?useUnicode=true&characterEncoding=utf-8
+    username: hongww
+    password: 198954
+spring:
+  redis:
+    # Redis数据库索引（默认为0）
+    database: 0
+    host: localhost
+    port: 6379
+    password: ~
+    timeout: 0
+logging:
+  file: /home/weiax/logs/security.${server.port}.log
+  level.com.weiax.client: INFO
